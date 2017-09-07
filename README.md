@@ -1,18 +1,18 @@
-# Bef is a responsive jekyll theme
+# Spidrtech responsive jekyll theme
 
-Bef - Blog Enjoy Freedom is a responsive jekyll theme which created to be simple and freedom.
+Spidrtech - Blog Enjoy Freedom is a responsive jekyll theme which created to be simple and freedom.
 
 ## Demo
 
-Check the theme in action [Demo](https://artemsheludko.github.io/bef/)
+Check the theme in action [Demo](https://hih7.com)
 
 The main page would look like this:
 
-![Main page preview](https://github.com/artemsheludko/bef/blob/master/assets/img/bef_main_page.jpg?raw=true)
+![Main page preview](https://github.com/Hih7/spider.com.github.io/blob/master/assets/images/screenshot.png?raw=true)
 
 The post page would look like this:
 
-![Post page preview](https://github.com/artemsheludko/bef/blob/master/assets/img/bef_post.jpg?raw=true)
+![Post page preview](https://github.com/Hih7/spider.com.github.io/blob/master/assets/images/screenshot.png?raw=true)
 
 ## Features
 
