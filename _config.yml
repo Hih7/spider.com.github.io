@@ -14,7 +14,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #banner-desc: # add banner description
 
 # Author settings
-author-pic: face.jpg # your photo
+author-pic: screenshot.png # your photo
 author-name: Goutam
 about-author: # about author
 email: goutam.rajak@esolzmail.com # your email
