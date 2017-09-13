@@ -2,13 +2,13 @@
   blurb: "SPIDR Tech gave us a new way to do the customer service business: digital, automated, fast, and easy. We saw immediate internal cost savings and improved citizen satisfaction, and expect even more."
   org: Rockefeller Archive Center
   images: testimonial-pic1.png
-  list:  <div class="list"><ul><li><span><img src="images/bullet.png" alt="" /></span>500%+ Citizen Engagement</li><li><span><img src="images/bullet.png" alt="" /></span>1000+ Hours Saved</li></ul> </div
+  list:  <div class="list"><ul><li><span><img src="images/bullet.png" alt="" /></span>500%+ Citizen Engagement</li><li><span><img src="images/bullet.png" alt="" /></span>1000+ Hours Saved</li></ul> </div>
 
 - name: Andromeda Yelton
   blurb: "SPIDR Tech gave us a new way to do the customer service business: digital, automated, fast, and easy. We saw immediate internal cost savings and improved citizen satisfaction, and expect even more."
   org: Director-at-large, LITA
-  twitter: ThatAndromeda
-  list:  <div class="list"><ul><li><span><img src="images/bullet.png" alt="" /></span>500%+ Citizen Engagement</li><li><span><img src="images/bullet.png" alt="" /></span>1000+ Hours Saved</li></ul> </div
+  images: testimonial-pic2.png
+  list:  <div class="list"><ul><li><span><img src="images/bullet.png" alt="" /></span>500%+ Citizen Engagement</li><li><span><img src="images/bullet.png" alt="" /></span>1000+ Hours Saved</li></ul> </div>
 
 
 - name: Bess Sadler
