@@ -4,8 +4,8 @@
   
 - name: Lorem ipsum dolor sit amet
   blurb: "Lorem ipsum dolor sit amet."
-  download_file: help-pic1.jpg
+  download_file: ../images/help-pic1.jpg
   
 - name: Lorem ipsum dolor sit amet
   blurb: "Lorem ipsum dolor sit amet."
-  download_file: help-pic1.jpg
+  download_file: ../images/help-pic1.jpg
