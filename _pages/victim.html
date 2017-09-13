@@ -171,48 +171,22 @@ permalink: /victim/
 					
 					<div class="whitepaper_slider">
 						<div class="row">
+					{% for product in site.data.plantform  %}
 						<div class="col-lg-4 col-sm-4">
 							<div class="pdf-box">
 							<div class="pdf-icn">
 								<img src="{{site.baseurl}}/images/pdf.png" alt="" />
 							</div>
 							<div class="pdf-cont">
-								<h4>Lorem ipsum dolor sit amet</h4>
-								<p>Nunc at sed libero blandit arcu,.</p>
+								<h4>{{ product.name }}</h4>
+								<p>{{ product.blurb }}</p>
 								
-								<a href="javascript:void(0);" class="more-btn">Download</a>	 
+								<a href="{{ product.download_file }}" class="more-btn">Download</a>	 
 							</div>
 							</div>
 						</div>
-						
-						<div class="col-lg-4 col-sm-4">
-							<div class="pdf-box">
-							<div class="pdf-icn">
-								<img src="{{site.baseurl}}/images/pdf.png" alt="" />
-							</div>
-							<div class="pdf-cont">
-								<h4>Lorem ipsum dolor sit amet</h4>
-								<p>Nunc at sed libero blandit arcu,.</p>
-								
-								<a href="javascript:void(0);" class="more-btn">Download</a>	 
-							</div>
-							</div>
-						</div>
-						
-						<div class="col-lg-4 col-sm-4">
-							<div class="pdf-box">
-							<div class="pdf-icn">
-								<img src="{{site.baseurl}}/images/pdf.png" alt="" />
-							</div>
-							<div class="pdf-cont">
-								<h4>Lorem ipsum dolor sit amet</h4>
-								<p>Nunc at sed libero blandit arcu,.</p>
-								
-								<a href="javascript:void(0);" class="more-btn">Download</a>	 
-							</div>
-						</div>
-						</div>
-					</div>
+						{% endfor %}
+					     </div>
 					</div>
 				</div><!-- container -->
 			</div>
