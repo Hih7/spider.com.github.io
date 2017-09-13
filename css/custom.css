@@ -2539,4 +2539,12 @@ full-outer span {
   from, to { border-color: transparent }
   50% { border-color: #fff }
 }*/
-
+.list ul li span {
+   background: url(../images/bullet.png)no-repeat 0 0;
+   background-size: 100% 100%;
+   width: 18px;
+   height: 19px;
+   display: inline-block;
+   margin-right: 5px;
+   vertical-align: middle;
+}
