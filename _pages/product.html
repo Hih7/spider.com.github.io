@@ -95,11 +95,11 @@ permalink: /product/
 	
 	<div class="main-outer">	
 		{% for product in site.data.plantform  %}
-		<div class="mod-one {{ product.class }}">
+		<div class="mod-one">
 			<div class="mbg-after">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5 col-sm-5">
+					<div class="col-lg-5 col-sm-5 {{ product.class }}">
 						<div class="mod-content">
 							<span><img src="{{site.baseurl}}/images/mod-icon1.png" alt="" /></span>
 							<h3>{{ product.name }}</h3>
