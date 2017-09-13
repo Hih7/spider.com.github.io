@@ -1,34 +1,14 @@
 - title: Victim Notifications
-  content: "Send crime victims emails and text messages that provide them with more information on their cases. These simple updates have led to over a 40% reduction in administrative call volume."
-  images: pro-pic1.jpg
-  link:  #
-
-- title: Victim Notifications
-  content: "Send crime victims emails and text messages that provide them with more information on their cases. These simple updates have led to over a 40% reduction in administrative call volume."
+  content: " Send crime victims emails and text messages that provide them with more information on their cases. These simple updates have led to over a 40% reduction in administrative call volume."
   images: pro-pic1.jpg
   link:  #
   
-  - title: Victim Notifications
-  content: "Send crime victims emails and text messages that provide them with more information on their cases. These simple updates have led to over a 40% reduction in administrative call volume."
-  images: pro-pic1.jpg
+- title: Non-Emergency Requests
+  content: " Manage and collaborate quickly with your officers online on all patrol requests, traffic enforcement requests, vacation/business checks, and more, which helps prevent crime while saving you time and money."
+  images: pro-pic2.jpg
   link:  #
   
-  - title: Victim Notifications
-  content: "Send crime victims emails and text messages that provide them with more information on their cases. These simple updates have led to over a 40% reduction in administrative call volume."
-  images: pro-pic1.jpg
-  link:  #
-  
-  - title: Victim Notifications
-  content: "Send crime victims emails and text messages that provide them with more information on their cases. These simple updates have led to over a 40% reduction in administrative call volume."
-  images: pro-pic1.jpg
-  link:  #
-  
-  - title: Victim Notifications
-  content: "Send crime victims emails and text messages that provide them with more information on their cases. These simple updates have led to over a 40% reduction in administrative call volume."
-  images: pro-pic1.jpg
-  link:  #
-  
-  - title: Victim Notifications
-  content: "Send crime victims emails and text messages that provide them with more information on their cases. These simple updates have led to over a 40% reduction in administrative call volume."
+  - title: CAD Autoresponder
+  content: " Automatically generate and sends a templated text  message to people who call 911 -- no matter what CAD you use."
   images: pro-pic1.jpg
   link:  #
