@@ -1,6 +1,11 @@
 - name: Hillel Arnold
   blurb: "I keep coming back to Code4lib primarily because of the people I’ve gotten to know. Sure, the presentations are great, but what’s even better is knowing I can grab someone in the hallway, or in IRC, or even an email months later, to ask them about something they’re working on; to get advice and feedback."
-  org: Rockefeller Archive Center
+  org: Rockefeller Archive Center <div class="list">
+						 <ul>
+						 	<li><span><img src="{{site.baseurl}}/images/bullet.png" alt="" /></span>500%+ Citizen Engagement</li>
+						 	<li><span><img src="{{site.baseurl}}/images/bullet.png" alt="" /></span>1000+ Hours Saved</li>
+						 </ul>
+					 </div>
   twitter: helrond
 
 - name: Andromeda Yelton
