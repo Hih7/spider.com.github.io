@@ -32,7 +32,9 @@
 .sm-logo {
     top: 150px;
 }
-
+.sm-logo {
+    top: 210px;
+}
 }
 
 @media (max-width: 1366px) {
