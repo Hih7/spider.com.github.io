@@ -1,14 +1,11 @@
 - name: Hillel Arnold
   images: testimonial-pic1.png
-  blurb: "SPIDR Tech gave us a new way to do the customer service business: digital, automated, fast, and easy. We saw immediate internal cost savings and 
-						improved citizen satisfaction, and expect even more.
-  list:  <div class="list"><ul><li><span><img src="images/bullet.png" alt="" /></span>500%+ Citizen Engagement</li><li><span><img src="images/bullet.png" alt="" /></span>1000+ Hours Saved</li></ul> </div>
-  twitter: helrond
+  blurb: "SPIDR Tech gave us a new way to do the customer service business: digital, automated, fast, and easy. We saw immediate internal cost savings and improved citizen satisfaction, and expect even more.
+  list:  <div class="list"><ul><li><span><img src="images/bullet.png" alt="" /></span>500%+ Citizen Engagement</li><li><span><img src="images/bullet.png" alt="" /></span>1000+ Hours Saved</li></ul> </div
 
 - name: Andromeda Yelton
   images: testimonial-pic2.png
-  blurb: "SPIDR Tech gave us a new way to do the customer service business: digital, automated, fast, and easy. We saw immediate internal cost savings and 
-						improved citizen satisfaction, and expect even more.
+  blurb: "SPIDR Tech gave us a new way to do the customer service business: digital, automated, fast, and easy. We saw immediate internal cost savings and improved citizen satisfaction, and expect even more.
   twitter: ThatAndromeda
 
 - name: Bess Sadler
