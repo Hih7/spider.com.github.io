@@ -7,11 +7,11 @@
 - name: Non-Emergency Requests
   blurb: "Manage and collaborate quickly with your officers online on all patrol requests, traffic enforcement requests, vacation/business checks, and more, which helps prevent crime while saving you time and money."
   link: module2
-  images: pro-pic2.jpg
+  images: mod-pic2.jpg
   class: mod-two wow fadeInRight
 
 - name: CAD Autoresponder
   blurb: "Automatically generate and sends a templated text  message to people who call 911 -- no matter what CAD you use."
   link: module3
-  images: pro-pic3.jpg
+  images: mod-pic3.jpg
   class: wow fadeInLeft
