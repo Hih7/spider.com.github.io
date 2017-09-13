@@ -37,19 +37,19 @@
 					</div>	
 					
 					<div class="product-innr wow slideInDown">
-						{% for plantform in site.data.plantform limit:3 %}
+						{% for product in site.data.plantform limit:3 %}
 						<div class="prod1">
 							<div class="pro-pic">
-								<img src="{{site.baseurl}}/images/{{ plantform.images }}" alt="{{ plantform.title }}" />
+								<img src="{{site.baseurl}}/images/{{ plantform.images }}" alt="{{ product.title }}" />
 							</div>
 							<div class="sm-logo">
 								<img src="{{site.baseurl}}/images/sm-logo.png" alt="" />
 							</div>
 							<div class="pro-text">
-								<h3>{{ plantform.title }}</h3>
-								<p>{{ plantform.content }}</p>
+								<h3>{{ product.title }}</h3>
+								<p>{{ product.content }}</p>
 								
-								<a href="{{ plantform.link }}" class="more-btn">Learn More</a>
+								<a href="{{ product.link }}" class="more-btn">Learn More</a>
 							</div>
 						</div>
 						{% endfor %}
