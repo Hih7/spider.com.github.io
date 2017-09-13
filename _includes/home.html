@@ -93,7 +93,7 @@
 
 <!-- testimonial -->
 	<section class="testimonial-section clearfix"> 
-		 {% for testimonial in site.data.testimonials %}
+		 {% for testimonial in site.data.testimonials limit:2 %}
 		<div class="test-left">
 			<div class="back-pic wow fadeInLeft">
 				<img src="{{site.baseurl}}/images/back-pic2.jpg" alt="" />
