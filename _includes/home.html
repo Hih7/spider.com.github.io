@@ -37,7 +37,7 @@
 					</div>	
 					
 					<div class="product-innr wow slideInDown">
-						{% for plantform in site.data.plantform %}
+						{% for plantform in site.data.plantform limit:3 %}
 						<div class="prod1">
 							<div class="pro-pic">
 								<img src="{{site.baseurl}}/images/{{ plantform.images }}" alt="{{ plantform.title }}" />
