@@ -79,9 +79,8 @@ permalink: /product/
 								</div>
 							</div>
 						</div>
-					</div><!-- row -->	
-					
-				</div><!-- container -->
+					</div>						
+				</div>
 			</section>
 		
 		<!-- /platform section -->
@@ -95,85 +94,32 @@ permalink: /product/
 		</div>
 	
 	<div class="main-outer">	
-		<div class="mod-one wow fadeInLeft">
+		{% for product in site.data.plantform  %}
+		<div class="mod-one {{ product.class }}">
 			<div class="mbg-after">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-5 col-sm-5">
 						<div class="mod-content">
 							<span><img src="{{site.baseurl}}/images/mod-icon1.png" alt="" /></span>
-							<h3>Victim Support</h3>
-							<p>Send crime victims emails and text messages that provide them with more information on their cases. These simple updates have led to over a 40% 
-								reduction in administrative call volume. </p>
+							<h3>{{ product.name }}</h3>
+							<p>{{ product.blurb }}</p>
 							
-							<a href="javascript:void(0);" class="more-btn">Learn More</a>	
+							<a href="{{ product.lnik }}" class="more-btn">Learn More</a>	
 							<a href="javascript:void(0);" class="more-btn">SEE IT IN ACTION</a>	 
 						</div>
 					</div>
 					
 					<div class="col-lg-7 col-sm-7">
 						<div class="mod-picture">
-							<img src="{{site.baseurl}}/images/mod-pic1.jpg" alt="" />
+							<img src="{{site.baseurl}}/images/{{ product.images }}" alt="{{ product.name }}" />
 						</div>
 					</div>
 				</div>
 				</div>
 			</div>
 		</div>	
-		
-		
-		<div class="mod-one mod-two wow fadeInRight">
-			<div class="mbg-after">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-sm-5 child-content">
-						<div class="mod-content">
-							<span><img src="{{site.baseurl}}/images/mod-icon2.png" alt="" /></span>
-							<h3>Non-Emergency Response </h3>
-							<p>Manage and collaborate quickly with your officers online on all patrol requests, traffic enforcement requests, vacation/business checks, and
-								 more, which helps prevent crime while saving you time and money. </p>
-								 
-							<a href="javascript:void(0);" class="more-btn">Learn More</a>	 
-							<a href="javascript:void(0);" class="more-btn">SEE IT IN ACTION</a>	
-						</div>
-					</div>
-					
-					<div class="col-lg-7 col-sm-7">
-						<div class="mod-picture">
-							<img src="{{site.baseurl}}/images/mod-pic2.jpg" alt="" />
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		
-		<div class="mod-one wow fadeInLeft">
-			<div class="mbg-after">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-sm-5">
-						<div class="mod-content">
-							<span><img src="{{site.baseurl}}/images/mod-icon3.png" alt="" /></span>
-							<h3>CAD Autoresponder </h3>
-							<p>Automatically generate and sends a templated text message to people who call 911 -- no matter what CAD you use. </p>
-								 
-							<a href="javascript:void(0);" class="more-btn">Learn More</a>	 
-							<a href="javascript:void(0);" class="more-btn">SEE IT IN ACTION</a>
-						</div>
-					</div>
-					
-					<div class="col-lg-7 col-sm-7">
-						<div class="mod-picture">
-							<img src="{{site.baseurl}}/images/mod-pic3.jpg" alt="" />
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
+		{% endfor %}
 		</div>	
 	</section>
 <!-- module-section -->
