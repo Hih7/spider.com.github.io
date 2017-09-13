@@ -93,20 +93,19 @@
 
 <!-- testimonial -->
 	<section class="testimonial-section clearfix"> 
-		{% for testimonial in site.data.testimonials %}
+		 {% for testimonial in site.data.testimonials %}
 		<div class="test-left">
 			<div class="back-pic wow fadeInLeft">
 				<img src="{{site.baseurl}}/images/back-pic1.jpg" alt="" />
 			</div>
 			<div class="test-content wow fadeInUp">
-				<h2>Grover Beach Police Department</h2>
+				<h2> {{ testimonial.title }}</h2>
 				<div class="test-card ">
 					<div class="author-pic">
 						<img src="{{site.baseurl}}/images/testimonial-pic1.png" alt="" />
 					</div>
-					<h3>{{ testimonial.person }}</h3>
-					<p>SPIDR Tech gave us a new way to do the customer service business: digital, automated, fast, and easy. We saw immediate internal cost savings and 
-						improved citizen satisfaction, and expect even more. <span><img src="{{site.baseurl}}/images/cl-quote.png" alt="" /></span>
+					<h3>{{ testimonial.name }}</h3>
+					<p>{{ testimonial.blurb }} <span><img src="{{site.baseurl}}/images/cl-quote.png" alt="" /></span>
 					</p>
 					 
 					 <div class="list">
