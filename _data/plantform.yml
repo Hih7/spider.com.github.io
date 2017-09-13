@@ -1,7 +1,7 @@
 - name: Victim Notifications
   blurb: "Send crime victims emails and text messages that provide them with more information on their cases. These simple updates have led to over a 40% reduction in administrative call volume."
   link: module1
-  images: pro-pic1.jpg
+  images: mod-pic1.jpg
   class: wow fadeInLeft
 
 - name: Non-Emergency Requests
