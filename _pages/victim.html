@@ -171,17 +171,17 @@ permalink: /victim/
 					
 					<div class="whitepaper_slider">
 						<div class="row">
-					{% for downloads in site.data.download  %}
+					{% for download in site.data.downloads  %}
 						<div class="col-lg-4 col-sm-4">
 							<div class="pdf-box">
 							<div class="pdf-icn">
 								<img src="{{site.baseurl}}/images/pdf.png" alt="" />
 							</div>
 							<div class="pdf-cont">
-								<h4>{{ downloads.name }}</h4>
-								<p>{{ downloads.blurb }}</p>
+								<h4>{{ download.name }}</h4>
+								<p>{{ download.blurb }}</p>
 								
-								<a href="{{ downloads.download_file }}" class="more-btn">Download</a>	 
+								<a href="{{ download.download_file }}" class="more-btn">Download</a>	 
 							</div>
 							</div>
 						</div>
