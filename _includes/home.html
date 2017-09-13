@@ -92,7 +92,8 @@
 
 
 <!-- testimonial -->
-	<section class="testimonial-section clearfix">        
+	<section class="testimonial-section clearfix"> 
+		{% for testimonial in site.data.testimonials %}
 		<div class="test-left">
 			<div class="back-pic wow fadeInLeft">
 				<img src="{{site.baseurl}}/images/back-pic1.jpg" alt="" />
@@ -103,7 +104,7 @@
 					<div class="author-pic">
 						<img src="{{site.baseurl}}/images/testimonial-pic1.png" alt="" />
 					</div>
-					<h3>FAKE POLICE CHIEF</h3>
+					<h3>{{ testimonial.person }}</h3>
 					<p>SPIDR Tech gave us a new way to do the customer service business: digital, automated, fast, and easy. We saw immediate internal cost savings and 
 						improved citizen satisfaction, and expect even more. <span><img src="{{site.baseurl}}/images/cl-quote.png" alt="" /></span>
 					</p>
@@ -117,7 +118,7 @@
 				</div>
 				</div>
 			</div>
-			
+			{% endfor %}
 			<div class="test-left">
 			<div class="back-pic wow fadeInRight">
 				<img src="{{site.baseurl}}/images/back-pic2.jpg" alt="" />
