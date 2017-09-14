@@ -2555,3 +2555,7 @@ full-outer span {
 .click{
 opacity:1!important;
 }
+.blog-inner .col-lg-6:first-child{
+width:100%;
+float:none;
+}
