@@ -2559,3 +2559,9 @@ opacity:1!important;
 width:100%;
 float:none;
 }
+.post-content p{
+margin-bottom:0!important;
+}
+.read-btn{
+margin-top:10px!important;
+}
