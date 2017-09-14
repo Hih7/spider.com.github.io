@@ -142,7 +142,7 @@ permalink: /resource/
 						{% for resourcedownloads in site.data.resourcedownload  %}
 						<div class="col-lg-4 col-sm-4">
 							<div class="pdf-box">
-							<a href="{{ resourcedownloads.download_file }}" class="pdf-icn">
+							<a href="{{ resourcedownloads.download_file }}" class="pdf-icn" download>
 								<img src="{{site.baseurl}}/images/{{ resourcedownloads.icon }}" alt="" />
 							</a>
 							<div class="pdf-cont">
