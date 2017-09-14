@@ -51,6 +51,10 @@ permalink: /blog/
 				<div class="col-lg-8 col-sm-8">
 					
 					<div class="blog-inner">
+				{% for post in site.posts offset: 0 limit: 2 %}
+				{% if site.categories.video == null %}
+					 <div class="col-lg-6 col-sm-6">
+					{% else %}
 						<div class="post-box">
 							<div class="blg-image">
 								<div class="vdo-sec">
@@ -58,83 +62,21 @@ permalink: /blog/
 										<span class="vdo-icon"><img src="{{site.baseurl}}/images/yt-btn.png" alt="" /></span> 
 									</a>
 								</div>
-								<h2>Posted on 13th Jan,2017 by Admin</h2>
+							<h2>Posted on {{ post.date | date_to_string }} {% if post.author %}by {{ post.author}}{% endif %}</h2>
+
 							</div>
 							
 							<div class="post-content">
-								<h3>Nulla pharetra, ligula quis semper tristique. </h3>
-								<p>Pellentesque leo est, accumsan vel sapien sed, bibendum maximus ipsum. Ut posuere urna id tellus dapibus ultrices. Interdum et malesuada 
-								   fames ac ante ipsum primis in faucibus. Vestibulum gravida sem elit.</p>
+								<h3>{{ post.title }} </h3>
+								<p>{{ post.content | strip_html | truncatewords:15}}</p>
 								   
-								 <a href="blog-detail1.html" class="read-btn">Read more</a>  
+								 <a href="{{ post.url }}" class="read-btn">Read more</a>  
 							</div>
 						</div>
-						
-						<div class="col-lg-6 col-sm-6">
-						<div class="post-box rht-mar">
-							<div class="blg-image">
-								<img src="{{site.baseurl}}/images/blg-post1.jpg" alt="" />
-								<h2>Posted on 10th July,2017 by Admin</h2>
-							</div>
-							
-							<div class="post-content">
-								<h3>Lorem ipsum dolor sit amet consectetur elit.</h3>
-								<p>Nunc at lorem sem. Nulla eget urna sed libero blandit lobortis.Disse eu vehicula arcu, non eleifend arcu. Nam aliquet est a imperdiet. </p>
-								   
-								 <a href="javascript:void(0);" class="read-btn">Read more</a>  
-							</div>
+						{% if site.categories.video == null %}
 						</div>
-						</div>
-						
-						<div class="col-lg-6 col-sm-6">
-						<div class="post-box rht-mar">
-							<div class="blg-image">
-								<img src="{{site.baseurl}}/images/blg-post2.jpg" alt="" />
-								<h2>Posted on 16th Aug,2017 by Admin</h2>
-							</div>
-							
-							<div class="post-content">
-								<h3>Donec faucibus lacinia est, eu elementum lectus </h3>
-								<p>Nunc at lorem sem. Nulla eget urna sed libero blandit lobortis.Disse eu vehicula arcu, non eleifend arcu. Nam aliquet est a imperdiet. Morbi 
-									in bibendum sem. </p>
-								   
-								 <a href="javascript:void(0);" class="read-btn">Read more</a>  
-							</div>
-						</div>
-						</div>
-						
-						<div class="col-lg-6 col-sm-6">
-						<div class="post-box rht-mar">
-							<div class="blg-image">
-								<img src="{{site.baseurl}}/images/blg-post3.jpg" alt="" />
-								<h2>Posted on 13th Jan,2017 by Admin</h2>
-							</div>
-							
-							<div class="post-content">
-								<h3>Maecenas mattis enim a nisi molestie faucibus.</h3>
-								<p>Nunc at lorem sem. Nulla eget urna sed libero blandit lobortis.Disse eu vehicula arcu, non eleifend arcu. Nam aliquet est a imperdiet. </p>
-								   
-								 <a href="javascript:void(0);" class="read-btn">Read more</a>  
-							</div>
-						</div>
-						</div>
-						
-						<div class="col-lg-6 col-sm-6">
-						<div class="post-box rht-mar">
-							<div class="blg-image">
-								<img src="{{site.baseurl}}/images/blg-post4.jpg" alt="" />
-								<h2>Posted on 5th Feb,2017 by Admin</h2>
-							</div>
-							
-							<div class="post-content">
-								<h3>Fusce turpis lectus, auctor vitae nisl sit amet.</h3>
-								<p>Nunc at lorem sem. Nulla eget urna sed libero blandit lobortis.Disse eu vehicula arcu, non eleifend arcu. Nam aliquet est a imperdiet.  </p>
-								   
-								 <a href="javascript:void(0);" class="read-btn">Read more</a>  
-							</div>
-						</div>
-						</div>
-						
+						{% else %}
+						{% endfor %}
 					</div>
 					
 				</div>
