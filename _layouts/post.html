@@ -5,7 +5,7 @@ layout: default
 		<section class="banner clearfix">
 			<div class="banner-inner">
 				<div class="ban-image innr-pg">
-					<img src="images/innr-ban6.jpg" alt="" />
+					<img src="{{site.baseurl}}/images/innr-ban6.jpg" alt="" />
 				</div>
 				
 					<div class="banner-caption inner-caption">
@@ -52,21 +52,18 @@ layout: default
 						<div class="post-box">
 							<div class="blg-image">
 								<div class="vdo-sec">
-									<a class="fancybox-media" href="https://youtu.be/EDMun9BtSwM"> <img src="images/blg-video1.jpg" alt="" /> 
-										<span class="vdo-icon"><img src="images/yt-btn.png" alt="" /></span> 
+									{% if post.youtube %}
+									<a class="fancybox-media" href="{{ post.youtube}}"> 
+										<span class="vdo-icon"><img src="{{site.baseurl}}/images/yt-btn.png" alt="" /></span> 							
+										{% endif %}
+										<img src="{{site.baseurl}}/images/{{ post.img }}" alt="" />
 									</a>
 								</div>
-								<!-- <h2>Posted on 13th Jan,2017 by Admin</h2> -->
 							</div>
 							
 							<div class="post-content">
-								<h3>Nulla pharetra, ligula quis semper tristique. </h3>
-								<p>Pellentesque leo est, accumsan vel sapien sed, bibendum maximus ipsum. Ut posuere urna id tellus dapibus ultrices. Interdum et malesuada 
-								   fames ac ante ipsum primis in faucibus. Vestibulum gravida sem elit.bibendum maximus ipsum. Ut posuere urna id tellus dapibus ultrices. Interdum et malesuada 
-								   fames ac ante ipsum primis in faucibus. Vestibulum gravida sem elit</p>
-								<p>Pellentesque leo est, accumsan vel sapien sed, bibendum maximus ipsum. Ut posuere urna id tellus dapibus ultrices. Interdum et malesuada 
-								   fames ac ante ipsum primis in faucibus. Vestibulum gravida sem elit.Pellentesque leo est, accumsan vel sapien sed, bibendum maximus ipsum. Ut posuere urna id tellus dapibus ultrices. Interdum et malesuada 
-								   fames ac ante ipsum primis in faucibus.</p>   
+								<h3>{{ post.title }}  </h3>
+								{{ post.content }}    
 								   
 								
 							</div>
@@ -101,7 +98,7 @@ layout: default
 							</div>
 							
 							<div class="tweet">
-								<div class="tw-icon"><img src="images/tweet.png" alt=""/></div>
+								<div class="tw-icon"><img src="{{site.baseurl}}/images/tweet.png" alt=""/></div>
 								<div class="t-cont">
 									<h4>Twitter API <span>@twitterapi</span></h4>
 									<p>Etiam sed orci tincidunt, tincidunt felis in, consequat </p>
@@ -110,7 +107,7 @@ layout: default
 							</div>
 							
 							<div class="tweet">
-								<div class="tw-icon"><img src="images/tweet.png" alt=""/></div>
+								<div class="tw-icon"><img src="{{site.baseurl}}/images/tweet.png" alt=""/></div>
 								<div class="t-cont">
 									<h4>Twitter API <span>@twitterapi</span></h4>
 									<p>Etiam sed orci tincidunt, tincidunt felis in, consequat </p>
@@ -118,23 +115,6 @@ layout: default
 								</div>
 							</div>
 						</div>
-						
-						<!-- <div class="latest-photo">
-							<div class="side-heading">
-								<h3>latest-photo</h3>
-							</div>
-							
-							<div class="gallery-outer">
-							<div class="gall">
-								<img src="images/side-img1.jpg" alt=""/>
-								<img src="images/side-img2.jpg" alt=""/>
-								<img src="images/side-img3.jpg" alt=""/>
-								<img src="images/side-img4.jpg" alt=""/>
-							</div>
-							</div>
-						</div>
-						 -->
-						
 					</div>	
 						
 				</div>
