@@ -109,13 +109,12 @@ permalink: /resource/
 				<a href="{{ post.url }}"><div class="col-lg-6 col-sm-6 wow fadeInLeft">
 					<div class="blg-image">
 						<img src="{{site.baseurl}}/images/{{ post.img }}" alt="" />
-						<h2>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author.display_name }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h2>
-
+						<h2>Posted on {{ post.date | date_to_string }} by {{ post.author }}</h2>
 					</div>
 					
 					<div class="blog-cont">
 						<p><span>{{ post.title }}</span>
-							{{ post.content | strip_html | truncatewords:10}}</p>
+							{{ post.content | strip_html | truncatewords:15}}</p>
 					</div>
 					</div></a>
 				{% endfor %}
