@@ -109,7 +109,7 @@ permalink: /resource/
 				<a href="{{ post.url }}"><div class="col-lg-6 col-sm-6 wow fadeInLeft">
 					<div class="blg-image">
 						<img src="{{site.baseurl}}/images/{{ post.img }}" alt="" />
-						<h2>Posted on {{ post.date | date_to_string }} by {{ post.author }}</h2>
+						<h2>Posted on {{ post.date | date_to_string }} {% if post.author %}by {{ page.author.author }}{% endif %}</h2>
 					</div>
 					
 					<div class="blog-cont">
