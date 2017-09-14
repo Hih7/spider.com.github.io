@@ -52,9 +52,7 @@ permalink: /blog/
 					
 					<div class="blog-inner">
 				{% for post in site.posts offset: 0 limit: 2 %}
-				{% if site.categories.video == null %}
 					 <div class="col-lg-6 col-sm-6">
-					{% else %}
 						<div class="post-box">
 							<div class="blg-image">
 								<div class="vdo-sec">
@@ -73,9 +71,7 @@ permalink: /blog/
 								 <a href="{{ post.url }}" class="read-btn">Read more</a>  
 							</div>
 						</div>
-						{% if site.categories.video == null %}
 						</div>
-						{% else %}
 						{% endfor %}
 					</div>
 					
