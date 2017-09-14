@@ -26,11 +26,11 @@ $(document).ready(function() {
         faders = $('.fadey');
     
     function nextFade() {
-        $(faders[faderIndex]).fadeOut(1000, function() {
+        $(faders[faderIndex]).fadeOut(3000, function() {
             faderIndex++;
             if (faderIndex >= faders.length)
                 faderIndex = 0;
-            $(faders[faderIndex]).fadeIn(1000, nextFade);
+            $(faders[faderIndex]).fadeIn(3000, nextFade);
         });
     }
     nextFade();
