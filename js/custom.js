@@ -226,7 +226,7 @@ $(document).ready(function() {
         });
          });   
          
-
+equalheight('.bg-post-text');
 	
 // !!window['addEventListener'] && new WOW().init();
 
