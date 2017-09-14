@@ -93,11 +93,9 @@ permalink: /blog/
 								<h3>post categories</h3>
 							</div>											
 							<ul>
-								<li><a href="javascript:void(0);">Business Post</a></li>
-								<li><a href="javascript:void(0);">Consulting</a></li>
-								<li><a href="javascript:void(0);">Management</a></li>
-								<li><a href="javascript:void(0);">Customer Insights</a></li>
-								<li><a href="javascript:void(0);">Organization</a></li>
+								{% for tag in site.tags %}
+								<li><a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a></li>
+								 {% endfor %}
 							</ul>
 						</div>
 						
