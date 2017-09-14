@@ -139,94 +139,22 @@ permalink: /resource/
 					<div class="whitepaper_slider">
 						<div class="row">
 							<div class="dwn-row">
+						{% for resourcedownloads in site.data.resourcedownload  %}
 						<div class="col-lg-4 col-sm-4">
 							<div class="pdf-box">
-							<a href="javascript:void(0);" class="pdf-icn">
-								<img src="{{site.baseurl}}/images/pdf.png" alt="" />
+							<a href="{{ resourcedownloads.download_file }}" class="pdf-icn">
+								<img src="{{site.baseurl}}/images/{{ resourcedownloads.icon }}" alt="" />
 							</a>
 							<div class="pdf-cont">
-								<h4>Lorem ipsum dolor sit amet</h4>
-								<p>Nunc at sed libero blandit arcu.</p>
+								<h4>{{ resourcedownloads.name }}</h4>
+								<p>{{ resourcedownloads.blurb }}</p>
 								
 								<!-- <a href="javascript:void(0);" class="more-btn">Download</a>	  -->
 							</div>
 							</div>
 						</div>
-						
-						<div class="col-lg-4 col-sm-4">
-							<div class="pdf-box">
-							<a href="javascript:void(0);" class="pdf-icn">
-								<img src="{{site.baseurl}}/images/video.png" alt="" />
-							</a>
-							<div class="pdf-cont">
-								<h4>Lorem ipsum dolor sit amet</h4>
-								<p>Nunc at sed libero blandit arcu,.</p>
-								
-								<!-- <a href="javascript:void(0);" class="more-btn">Download</a>	  -->
-							</div>
-							</div>
-							</div>
+						{% endfor %} 
 						</div>
-						
-						<div class="col-lg-4 col-sm-4">
-							<div class="pdf-box">
-							<a href="javascript:void(0);" class="pdf-icn">
-								<img src="{{site.baseurl}}/images/graphics.png" alt="" />
-							</a>
-							<div class="pdf-cont">
-								<h4>Lorem ipsum dolor sit amet</h4>
-								<p>Nunc at sed libero blandit arcu,.</p>
-								
-								<!-- <a href="javascript:void(0);" class="more-btn">Download</a>	  -->
-							</div>
-						</div>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="dwn-row">
-						<div class="col-lg-4 col-sm-4">
-							<div class="pdf-box">
-							<a href="javascript:void(0);" class="pdf-icn">
-								<img src="{{site.baseurl}}/images/video.png" alt="" />
-							</a>
-							<div class="pdf-cont">
-								<h4>Lorem ipsum dolor sit amet</h4>
-								<p>Nunc at sed libero blandit arcu.</p>
-								
-								<!-- <a href="javascript:void(0);" class="more-btn">Download</a>	  -->
-							</div>
-							</div>
-						</div>
-						
-						<div class="col-lg-4 col-sm-4">
-							<div class="pdf-box">
-							<a href="javascript:void(0);" class="pdf-icn">
-								<img src="{{site.baseurl}}/images/pdf.png" alt="" />
-							</a>
-							<div class="pdf-cont">
-								<h4>Lorem ipsum dolor sit amet</h4>
-								<p>Nunc at sed libero blandit arcu,.</p>
-								
-								<!-- <a href="javascript:void(0);" class="more-btn">Download</a>	  -->
-							</div>
-							</div>
-						</div>
-						
-						<div class="col-lg-4 col-sm-4">
-							<div class="pdf-box">
-							<a href="javascript:void(0);" class="pdf-icn">
-								<img src="{{site.baseurl}}/images/video.png" alt="" />
-							</a>
-							<div class="pdf-cont">
-								<h4>Lorem ipsum dolor sit amet</h4>
-								<p>Nunc at sed libero blandit arcu,.</p>
-								
-								<!-- <a href="javascript:void(0);" class="more-btn">Download</a>	  -->
-							</div>
-						</div>
-						</div>
-					</div> 
 					</div>
 					</div>
 				</div><!-- container -->
