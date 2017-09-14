@@ -108,7 +108,7 @@ permalink: /resource/
 			{% for post in site.posts offset: 0 limit: 2 %}
 				<a href="{{ post.url }}"><div class="col-lg-6 col-sm-6 wow fadeInLeft">
 					<div class="blg-image">
-						<img src="{{site.baseurl}}/images/blg-pic1.jpg" alt="" />
+						<img src="{{site.baseurl}}/images/{{ post.img }}" alt="" />
 						<h2>{{ post.date | date_to_string }} by Admin</h2>
 					</div>
 					
