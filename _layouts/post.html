@@ -83,12 +83,10 @@ layout: default
 								<h3>post categories</h3>
 							</div>
 							
-							<ul>
-								<li><a href="javascript:void(0);">Business Post</a></li>
-								<li><a href="javascript:void(0);">Consulting</a></li>
-								<li><a href="javascript:void(0);">Management</a></li>
-								<li><a href="javascript:void(0);">Customer Insights</a></li>
-								<li><a href="javascript:void(0);">Organization</a></li>
+							<ul>											
+							{% for category in site.categories %}
+							  <li><a name="{{ category | first }}">{{ category | first }}</a></li>
+							{% endfor %}
 							</ul>
 						</div>
 						
@@ -98,22 +96,11 @@ layout: default
 							</div>
 							
 							<div class="tweet">
-								<div class="tw-icon"><img src="{{site.baseurl}}/images/tweet.png" alt=""/></div>
-								<div class="t-cont">
-									<h4>Twitter API <span>@twitterapi</span></h4>
-									<p>Etiam sed orci tincidunt, tincidunt felis in, consequat </p>
-									<a href="javascript:void(0);">http.twittercommunity.com</a>
-								</div>
+									<blockquote class="embedly-card"><h4><a href="https://twitter.com/goutamsrajak">Goutam Sarkar (@goutamsrajak) | Twitter</a></h4><p>The latest Tweets from Goutam Sarkar (@goutamsrajak): "demo http://35.154.195.114/gallery/index.php/2017/04/03/demo/ https://t.co/eH8OMPAGWw"</p></blockquote>
+						        <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>							
 							</div>
 							
-							<div class="tweet">
-								<div class="tw-icon"><img src="{{site.baseurl}}/images/tweet.png" alt=""/></div>
-								<div class="t-cont">
-									<h4>Twitter API <span>@twitterapi</span></h4>
-									<p>Etiam sed orci tincidunt, tincidunt felis in, consequat </p>
-									<a href="javascript:void(0);">http.twittercommunity.com</a>
-								</div>
-							</div>
+							
 						</div>
 					</div>	
 						
