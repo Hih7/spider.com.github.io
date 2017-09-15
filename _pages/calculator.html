@@ -49,49 +49,30 @@ permalink: /calculator/
 						</h2>
 					</div>
                     <div class="appli_txtouter">
+		{% for departments in site.data.department  %}    
                         <div class="appli_txt clearfix">
                             <div class="txt_lft">
                                 <div class="txt_hd">
                                     <h3>
-                                        Current number of servers
+                                        {{ departments.name }}
                                     </h3>
                                 </div>
                                 <p>
-                                    Please estimate the number of apps in your environment that are candidates for Docker.
+                                    {{ departments.blurb }}
                                 </p>
                             </div>
                             <div class="apps">
                                 <div class="input-wrap">
-                                    <span>Sworn Size:</span>
-                                    <input type="number" required="" name="numberOfApps" class="numberOfApps" placeholder="e.g. 10" value="20">
+                                    <span>{{ departments.subtitle }}</span>
+                                    <input type="number" required="" name="numberOfApps" class="numberOfApps" placeholder="e.g. 10" value="{{ departments.value }}">
                                   </div>
                             </div>
                         </div>
-
-                        <div class="appli_txt clearfix">
-                            <div class="txt_lft">
-                                <div class="txt_hd">
-                                    <h3>
-                                        Deployment Frequency
-                                    </h3>
-                                </div>
-                                <p>
-                                    On average, how often does your organization release software in a month, per application?
-                                </p>
-                            </div>
-                            <div class="apps">
-                                <div class="input-wrap">
-                                    <span>Average Salary: </span>
-                                    <input type="number" required="" name="numberOfApps" class="numberOfApps" placeholder="e.g. 10" value="16">
-                                  </div>
-                            </div>
-                        </div>
-                    </div>                                            
-                    
-				  </div>				
+		{% endfor %}
+                    </div>                                                           
+		  </div>				
                 </div>
-			</div>
-        
+	   </div> 
         <div class="application_inner">		
 			<div class="container">
 				<div class="appli_mat">
