@@ -2572,3 +2572,6 @@ margin-top:10px!important;
 .blg-image img {
     height: 299px;
 }
+.blg-image span.vdo-icon img{
+    height: auto;
+}
