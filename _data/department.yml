@@ -3,12 +3,7 @@
   subtitle: Sworn Size
   value: 20
   
-- name: Lorem ipsum dolor sit amet
-  blurb: "Lorem ipsum dolor sit amet."
-  subtitle: Sworn Size
-  value: 10
-  
-- name: Lorem ipsum dolor sit amet
-  blurb: "Lorem ipsum dolor sit amet."
-  subtitle: Sworn Size
-  value: 10
+- name: Deployment Frequency
+  blurb: "On average, how often does your organization release software in a month, per application?"
+  subtitle: Average Salary
+  value: 16
