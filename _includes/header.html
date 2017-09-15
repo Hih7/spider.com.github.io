@@ -23,10 +23,10 @@
 
 								<div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
 									<ul class="nav navbar-nav">
-										<li  class="active">
-											<a href="{{site.baseurl}}/">Home</a>
+										<li  class="{% active_page index%}">
+											<a href="{{site.baseurl}}/" >Home</a>
 										</li>
-										<li class="dropdown">
+										<li class="dropdown" class="{% active_page product%}">
 											<a href="{{site.baseurl}}/product" class="dropdown-toggle">Product <b class="caret"></b></a>
 											<ul class="dropdown-menu">
 												<li>
