@@ -2572,6 +2572,10 @@ margin-top:10px!important;
 .blg-image img {
     height: 299px;
 }
-.blg-image span.vdo-icon img{
-    height: auto;
+.blg-image .vdo-icon {
+   height: 28px;
+   width:38px;
+}
+.post-box .blg-image img {
+   height: auto;
 }
