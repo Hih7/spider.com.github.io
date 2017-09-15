@@ -2579,3 +2579,40 @@ margin-top:10px!important;
 .post-box .blg-image img {
    height: auto;
 }
+.nwsletter-section .mc-field-group .email {
+   width: 465px;
+   background: none;
+   border: 1px solid #00507a;
+  border-radius: 25px;
+   padding: 14px 20px;
+   font-size: 15px;
+   color: #000;
+   display: inline-block;
+   vertical-align: middle;
+   position: relative;
+}
+.nwsletter-section #mc_embed_signup_scroll .button {
+   font-size: 18px;
+   color: #fff;
+   display: inline-block;
+   vertical-align: middle;
+   padding: 9px 28px;
+   border: 1px solid #00507a;
+   border-radius: 25px;
+   margin-left: 15px;
+   background: #00507a;
+   text-transform: uppercase;
+   font-weight: 700;
+   transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+}
+.nwsletter-section #mc_embed_signup div.mce_inline_error {
+   margin: 3px 0;
+}   
+
+.nwsletter-section .mc-field-group {
+   float: left;
+}
