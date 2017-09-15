@@ -1,0 +1,14 @@
+- name: Lorem ipsum dolor sit amet
+  blurb: "Lorem ipsum dolor sit amet."
+  subtitle: Sworn Size
+  value: 20
+  
+- name: Lorem ipsum dolor sit amet
+  blurb: "Lorem ipsum dolor sit amet."
+  subtitle: Sworn Size
+  value: 20
+  
+  - name: Lorem ipsum dolor sit amet
+  blurb: "Lorem ipsum dolor sit amet."
+  subtitle: Sworn Size
+  value: 20
