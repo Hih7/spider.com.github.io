@@ -1,5 +1,6 @@
 ---
 layout: post
+category: Customer Insights
 title: "Nevada: On the way to Nevada"
 img: blg-post2.jpg # Add image post (optional)
 date: 2017-07-12 12:50:00 +0300
