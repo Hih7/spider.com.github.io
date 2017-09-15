@@ -108,7 +108,13 @@ permalink: /resource/
 			{% for post in site.posts offset: 0 limit: 2 %}
 				<a href="{{ site.baseurl }}{{ post.url }}"><div class="col-lg-6 col-sm-6 wow fadeInLeft">
 					<div class="blg-image">
-						<img src="{{site.baseurl}}/images/{{ post.img }}" alt="" />
+						{% if post.youtube %}
+									<a class="fancybox-media" href="{{ post.youtube}}"> 
+										<span class="vdo-icon"><img src="{{site.baseurl}}/images/yt-btn.png" alt="" /></span> 							
+										{% endif %}
+										<img src="{{site.baseurl}}/images/{{ post.img }}" alt="" />
+									</a>
+						
 						<h2>Posted on {{ post.date | date_to_string }} {% if post.author %}by {{ post.author}}{% endif %}</h2>
 					</div>
 					
