@@ -1,5 +1,6 @@
 ---
 layout: post
+category: Management
 title: "Sweden: Beautiful forest"
 img: blg-post1.jpg # Add image post (optional)
 date: 2017-07-12 12:52:00 +0300
