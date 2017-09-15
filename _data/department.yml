@@ -5,8 +5,10 @@
   
 - name: Lorem ipsum dolor sit amet
   blurb: "Lorem ipsum dolor sit amet."
-  download_file: ../images/help-pic1.jpg
+  subtitle: Sworn Size
+  value: 10
   
 - name: Lorem ipsum dolor sit amet
   blurb: "Lorem ipsum dolor sit amet."
-  download_file: ../images/help-pic1.jpg
+  subtitle: Sworn Size
+  value: 10
