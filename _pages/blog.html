@@ -88,10 +88,12 @@ permalink: /blog/
 						<div class="post-cat">
 							<div class="side-heading">
 								<h3>post categories</h3>
-							</div>											
+							</div>
+							<ul>											
 							{% for category in site.categories %}
 							  <li><a name="{{ category | first }}">{{ category | first }}</a></li>
 							{% endfor %}
+							</ul>
 						</div>
 						
 						<div class="twitter">
