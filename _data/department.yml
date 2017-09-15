@@ -1,7 +1,7 @@
-- name: Lorem ipsum dolor sit amet
-  blurb: "Lorem ipsum dolor sit amet."
+- name: Current number of servers
+  blurb: "Please estimate the number of apps in your environment that are candidates for Docker."
   subtitle: Sworn Size
-  value: 10
+  value: 20
   
 - name: Lorem ipsum dolor sit amet
   blurb: "Lorem ipsum dolor sit amet."
