@@ -1,5 +1,6 @@
 ---
 layout: post
+category: Business Post
 title: "My first trip: The wonderful Himalayan"
 img: blg-video1.jpg # Add image post (optional)
 youtube: https://youtu.be/EDMun9BtSwM
