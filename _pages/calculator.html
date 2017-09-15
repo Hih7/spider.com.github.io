@@ -63,7 +63,7 @@ permalink: /calculator/
                             </div>
                             <div class="apps">
                                 <div class="input-wrap">
-                                    <span>{{ departments.subtitle }}</span>
+                                    <span>{{ departments.subtitle }}:</span>
                                     <input type="number" required="" name="numberOfApps" class="numberOfApps" placeholder="e.g. 10" value="{{ departments.value }}">
                                   </div>
                             </div>
@@ -82,70 +82,32 @@ permalink: /calculator/
 						</h2>
 					</div>
                     <div class="appli_txtouter">
+			{% for operation in site.data.operations  %} 
                         <div class="appli_txt clearfix">
                             <div class="txt_lft">
                                 <div class="txt_hd">
                                     <h3>
-                                        Current number of servers
+                                       {{ operation.name }}
                                     </h3>
                                 </div>
                                 <p>
-                                    Please estimate the number of apps in your environment that are candidates for Docker.
+                                    {{ operation.blurb }}
                                 </p>
                             </div>
                             <div class="apps">
                                 <div class="input-wrap">
-                                    <span> Requests/Year: </span>
-                                    <input type="number" required="" name="numberOfApps" class="numberOfApps" placeholder="e.g. 10" value="20">
+                                    <span> {{ operation.subtitle }}: </span>
+                                    <input type="number" required="" name="numberOfApps" class="numberOfApps" placeholder="e.g. 10" value="{{ operation.value }}">
                                   </div>
                             </div>
                         </div>
-
-                        <div class="appli_txt clearfix">
-                            <div class="txt_lft">
-                                <div class="txt_hd">
-                                    <h3>
-                                        Deployment Frequency
-                                    </h3>
-                                </div>
-                                <p>
-                                    On average, how often does your organization release software in a month, per application?
-                                </p>
-                            </div>
-                            <div class="apps">
-                                <div class="input-wrap">
-                                    <span>Complaints/Year: </span>
-                                    <input type="number" required="" name="numberOfApps" class="numberOfApps" placeholder="e.g. 10" value="16">
-                                  </div>
-                            </div>
-                        </div>
-                        
-                        <div class="appli_txt clearfix">
-                            <div class="txt_lft">
-                                <div class="txt_hd">
-                                    <h3>
-                                        Deployment Frequency
-                                    </h3>
-                                </div>
-                                <p>
-                                    On average, how often does your organization release software in a month, per application?
-                                </p>
-                            </div>
-                            <div class="apps">
-                                <div class="input-wrap">
-                                    <span> Calls for Service/Year: </span>
-                                    <input type="number" required="" name="numberOfApps" class="numberOfApps" placeholder="e.g. 10" value="16">
-                                  </div>
-                            </div>
-                        </div>
+			{% endfor %}
                     </div>   
                     
                     <div class="application_btnouter">
                         <a href="javascript:void(0);">Calculate savings</a>
                     </div>
-                    
-				  </div>				
-                </div>
-			</div>
-										
+			</div>				
+            	    </div>
+		</div>									
 	</section>
