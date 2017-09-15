@@ -2616,3 +2616,7 @@ margin-top:10px!important;
 .nwsletter-section .mc-field-group {
    float: left;
 }
+.nwsletter-section .mc-field-group .email::-webkit-input-placeholder {color: #00507a;opacity:1;}
+.nwsletter-section .mc-field-group .email:-moz-placeholder {color: #00507a;opacity:1;}
+.nwsletter-section .mc-field-group .email::-moz-placeholder {color: #00507a;opacity:1;}
+.nwsletter-section .mc-field-group .email:-ms-input-placeholder {color: #00507a;opacity:1;}
