@@ -2634,3 +2634,44 @@ span.hs-form-required {
     font-size: 12px;
     color: #8B0000;
 }
+.nwsletter-section .hs-input {
+   width: 465px;
+   background: none;
+   border: 1px solid #00507a;
+   border-radius: 25px;
+   padding: 14px 20px;
+   font-size: 15px;
+   color: #000;
+   display: inline-block;
+   vertical-align: middle;
+   position: relative;
+}
+.nwsletter-section .hs-button {
+   font-size: 18px;
+   color: #fff;
+   display: inline-block;
+   vertical-align: middle;
+   padding: 9px 28px;
+   border: 1px solid #00507a;
+   border-radius: 25px;
+   margin-left: 15px;
+   background: #00507a;
+   text-transform: uppercase;
+   font-weight: 700;
+   transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+}
+.nwsletter-section .hs-error-msgs label {
+   margin: 10px 15px;
+}    
+.nwsletter-section .hs_email {
+   float: left;
+}
+
+.nwsletter-section .hs-input::-webkit-input-placeholder {color: #00507a;opacity:1;}
+.nwsletter-section .hs-input:-moz-placeholder {color: #00507a;opacity:1;}
+.nwsletter-section .hs-input::-moz-placeholder {color: #00507a;opacity:1;}
+.nwsletter-section .hs-input:-ms-input-placeholder {color: #00507a;opacity:1;}
