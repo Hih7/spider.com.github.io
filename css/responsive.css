@@ -204,8 +204,8 @@
     height: 215px;
 }
 .ftr_cont form input[type="submit"] {
-    width: 165px;
-    height: 40px;
+    width: 165px!important;
+    height: 40px!important;
 }
 .ftr_bott {
     padding-top: 15px;
@@ -1265,9 +1265,9 @@
     margin-bottom: 4px;
 }
 .ftr_cont form input[type="submit"] {
-    width: 155px;
-    height: 35px;
-    font-size: 15px;
+    width: 155px!important;
+    height: 35px!important;
+    font-size: 15px!important;
 }
 .footer {
     padding: 18px 0 10px;
@@ -1776,8 +1776,8 @@ header {
     width: 30%;
 }
 .ftr_cont form input[type="submit"] {
-   display: block;
-    margin: auto;
+   display: block!important;
+    margin: auto!important;
 }
 .ftr_top {
     padding-bottom: 0;
