@@ -76,37 +76,27 @@ layout: default
 						<div class="search-box">
 							<input type="text" class="search-field" placeholder="Search" />
 							<input value="" type="submit" class="search-icon"/>
-								
 							
-							 <!-- Search form -->
-								  <form method="get" action="/blog" data-search-form>
-								    <label for="q">Search term</label>
-								    <input type="search" name="q" id="q" placeholder="Enter search term" data-search-input />
-								    <input type="submit" value="Search" />
-								  </form>
+							
+							<div id="search-demo-container">
+      <input type="text" id="search-input" placeholder="search...">
+      <ul id="results-container"></ul>
+    </div>	
+						
+    <script type="text/javascript">
+      window.simpleJekyllSearch = new SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.baseurl }}/search.json',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+        exclude: ['Welcome']
+      })
+    </script>
+							
 
-								  <!-- Search results placeholder -->
-								  <p data-search-found>
-								    <span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
-								  </p>
-								  <div data-search-results></div>
-
-
-
-								  <!-- Search result template -->
-								  <script type="text/x-template" id="search-result">
-								    <div>
-								      <h1><a href="##Url##">##Title##</a></h1>
-								      <h2><a href="##Url##">##Date##</a></h2>
-								      <a href="##Url##">Read &ldquo;##Title##&rdquo;</a>
-								    </div>
-								  </script>
-
-								  <!-- jQuery - required but can be moved to the <head> -->
-								  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-								  <!-- Search script - Must appear after template -->
-								  <script src="{{site.baseurl}}/scripts/search.js"></script>
 						</div>
 						
 						<div class="post-cat">
