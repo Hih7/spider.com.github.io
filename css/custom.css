@@ -2663,10 +2663,7 @@ span.hs-form-required {
    -webkit-transition: all 0.5s;
    -o-transition: all 0.5s;
    -ms-transition: all 0.5s;
-}
-.nwsletter-section .hs-error-msgs label {
-   margin: 10px 15px;
-}    
+}  
 .nwsletter-section .hs_email {
    float: left;
 }
@@ -2675,3 +2672,10 @@ span.hs-form-required {
 .nwsletter-section .hs-input:-moz-placeholder {color: #00507a;opacity:1;}
 .nwsletter-section .hs-input::-moz-placeholder {color: #00507a;opacity:1;}
 .nwsletter-section .hs-input:-ms-input-placeholder {color: #00507a;opacity:1;}
+.nwsletter-section .hs_email label {
+   display: none;
+}
+.nwsletter-section .hs_email .hs-error-msgs label {
+   margin: 10px 15px;
+   display: inline-block;
+}  
