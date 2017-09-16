@@ -2680,7 +2680,7 @@ span.hs-form-required {
    display: inline-block;
 }  
 .media-para input{
-width: 475px;
+    width: 475px;
     box-shadow: none;
     display: block;
     font-size: 18px;
@@ -2695,4 +2695,18 @@ width: 475px;
     outline: 0px;
     margin: auto;
     padding: 18px 15px;
+}
+
+.media-para input[type="submit"]{
+    display: inline-block;
+    color: rgb(0, 80, 122);
+    text-transform: uppercase;
+    padding: 18px 30px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin: 25px 0px 0px;
 }
