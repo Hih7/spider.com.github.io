@@ -2709,4 +2709,5 @@ span.hs-form-required {
     background: rgb(255, 255, 255);
     border-radius: 4px;
     margin: 25px 0px 0px;
+    width: 150px;
 }
