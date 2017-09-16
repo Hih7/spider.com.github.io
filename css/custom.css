@@ -2679,3 +2679,20 @@ span.hs-form-required {
    margin: 10px 15px;
    display: inline-block;
 }  
+.media-para input{
+width: 475px;
+    box-shadow: none;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    border-radius: 4px;
+    outline: 0px;
+    margin: auto;
+    padding: 18px 15px;
+}
