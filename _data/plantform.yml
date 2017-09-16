@@ -1,6 +1,6 @@
 - name: Victim Notifications
   blurb: "Send crime victims emails and text messages that provide them with more information on their cases. These simple updates have led to over a 40% reduction in administrative call volume."
-  link: victim
+  link: ../victim
   images: mod-pic1.jpg
 
 - name: Non-Emergency Requests
