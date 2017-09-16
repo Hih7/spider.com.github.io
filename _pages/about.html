@@ -130,96 +130,25 @@ permalink: /about/
 						<div class="resp-tabs-container hor_1">
 							<div>
 								<div class="team_slider">
-
+								{% for leaderships in site.data.leadership  %}
 										<div class="team-outer">
 											<div class="membr">
-												<img src="{{site.baseurl}}/images/member1.jpg" alt=""/>
+												<img src="{{site.baseurl}}/images/{{ leaderships.images }}" alt=""/>
 											</div>
 											<div class="member-detail">
-												<h4>Rahul Sidhu</h4>
-												<span>Chief Executive Officer</span>
+												<h4>{{ leaderships.name }}</h4>
+												<span>{{ leaderships.designation }}</span>
 											</div>
 											<div class="membr-social">
 												<ul>
-													<li><a href="javascript:void(0);"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-													<li><a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+													<li><a href="{{ leaderships.linkedin }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+													<li><a href="{{ leaderships.twitter }}"target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 												</ul>
 											</div>
 										</div>
-
-									
-							
-										<div class="team-outer">
-											<div class="membr">
-												<img src="{{site.baseurl}}/images/member3.jpg" alt=""/>
-											</div>
-											<div class="member-detail">
-												<h4>Kenaniah Cerny</h4>
-												<span>Chief Technology Officer</span>
-											</div>
-											<div class="membr-social">
-												<ul>
-													<li><a href="javascript:void(0);"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-													<li><a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									
-									
-
-										<div class="team-outer">
-											<div class="membr">
-												<img src="{{site.baseurl}}/images/member4.jpg" alt=""/>
-											</div>
-											<div class="member-detail">
-												<h4>Elon Kaiserman</h4>
-												<span>Chief Operating Officer</span>
-											</div>
-											<div class="membr-social">
-												<ul>
-													<li><a href="javascript:void(0);"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-													<li><a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-												</ul>
-											</div>
-										</div>
-	
-									
-
-										<div class="team-outer">
-											<div class="membr">
-												<img src="{{site.baseurl}}/images/member5.png" alt=""/>
-											</div>
-											<div class="member-detail">
-												<h4>Abhi Nemani</h4>
-												<span>Chief Product Officer</span>
-											</div>
-											<div class="membr-social">
-												<ul>
-													<li><a href="javascript:void(0);"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-													<li><a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-												</ul>
-											</div>
-										</div>
-
-									
-
-										<div class="team-outer">
-											<div class="membr">
-												<img src="{{site.baseurl}}/images/member2.jpg" alt=""/>
-											</div>
-											<div class="member-detail">
-												<h4>Mandy Duffy</h4>
-												<span>Vice President, Sales Operations</span>
-											</div>
-											<div class="membr-social">
-												<ul>
-													<li><a href="javascript:void(0);"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-													<li><a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-												</ul>
-											</div>
-										</div>
+										{% endfor %}						
                                     
-                                 </div>
+                             				    </div>
 							</div>
 						</div>
 					</div>
@@ -299,18 +228,18 @@ permalink: /about/
                 <div class="test-content wow fadeInUp">
                 	
                     <h2>Grover Beach Police Department</h2>
+		{% for testimonial in site.data.testimonials limit:2 %}
                     <div class="test-card ">
                         <div class="author-pic">
-                            <img src="{{site.baseurl}}/images/testimonial-pic1.png" alt="" />
+                            <img src="{{site.baseurl}}/images/{{ testimonial.images }}" alt="" />
                         </div>
-                        <h3>Chief John Peters</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                           when an unknown printer took a galley of type and scrambled it to make a type specimen book. <span><img src="images/cl-quote.png" alt="" /></span>
-                        </p>
+                        <h3>{{ testimonial.name }}</h3>
+                        <p>{{ testimonial.blurb }}   </p>
                     </div>
+		{% endfor %}	
 		
 			</div>
-        </div>								
+       		 </div>								
 	</section>
 <!-- testimonial -->
 		<section class="media-kit">
