@@ -55,9 +55,8 @@ permalink: /blog/
 									{% if post.youtube %}
 									<a class="fancybox-media" href="{{ post.youtube}}"> 
 										<span class="vdo-icon"><img src="{{site.baseurl}}/images/yt-btn.png" alt="" /></span> 							
-										{% endif %}
-										<img src="{{site.baseurl}}/images/{{ post.img }}" alt="" />
-									</a>
+										{% endif %}</a>
+										<a href="{{ site.baseurl }}{{ post.url }}"><img src="{{site.baseurl}}/images/{{ post.img }}" alt="" /></a>							
 								</div>
 							<h2>Posted on {{ post.date | date_to_string }} {% if post.author %}by {{ post.author}}{% endif %}</h2>
 
