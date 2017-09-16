@@ -2104,7 +2104,7 @@ header {
 .blg-image img {
     height: 299px;
 }
-
+.x-module .mbg-after::after{display:none;}
 }
 @media (max-width: 667px) {
 .banner-caption h1 {
