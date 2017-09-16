@@ -80,8 +80,29 @@ permalink: /blog/
 				<div class="col-lg-4 col-sm-4">
 					<div class="right-bg">
 						<div class="search-box">
-							<input type="text" class="search-field" placeholder="Search" />
-							<input value="" type="submit" class="search-icon"/>
+							<form action="{{site.baseurl}}/search" method="get">
+							<!--<input type="text" class="search-field" placeholder="Search" />-->
+							<input type="text" class="search-field" id="search-box" placeholder="Search" name="query">
+							<input type="submit" class="search-icon" value="">	
+							</form>						
+						<ul id="search-results"></ul>
+
+						<script>
+						  window.store = {
+						    {% for post in site.posts %}
+						      "{{ post.url | slugify }}": {
+							"title": "{{ post.title | xml_escape }}",
+							"author": "{{ post.author | xml_escape }}",
+							"category": "{{ post.category | xml_escape }}",
+							"content": {{ post.content | strip_html | strip_newlines | jsonify }},
+							"url": "{{ post.url | xml_escape }}"
+						      }
+						      {% unless forloop.last %},{% endunless %}
+						    {% endfor %}
+						  };
+						</script>
+							
+							
 						</div>
 						
 						<div class="post-cat">
