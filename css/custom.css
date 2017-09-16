@@ -2630,3 +2630,7 @@ span.hs-form-required {
 .hs-form-99f6f693-2ef7-465d-96e3-30e6ebdbf4fe_b949018a-b544-4cf8-ab7f-d493c98aca5a fieldset.form-columns-1 .hs-input {
     width: 100%!important;
 }
+.ftr_cont label {
+    font-size: 12px;
+    color: #8B0000;
+}
