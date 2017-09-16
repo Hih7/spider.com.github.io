@@ -2802,7 +2802,9 @@ header {
     padding: 10px 20px;
     font-size: 15px;
 } 
-
+.media-para input{
+    width:100%;
+    }
 }
 
 @media (max-width: 420px) {
