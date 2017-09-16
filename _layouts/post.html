@@ -59,6 +59,8 @@ layout: default
 									{% endif %}
 									<img src="{{site.baseurl}}/images/{{ page.img }}" alt="" />
 								</div>
+				<h2>Posted on {{ post.date | date_to_string }} {% if post.author %}by {{ post.author}}{% endif %}</h2>
+
 							</div>
 							
 							<div class="post-content">
