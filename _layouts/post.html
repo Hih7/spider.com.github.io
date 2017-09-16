@@ -55,7 +55,8 @@ layout: default
 									{% if page.youtube %}
 									<a class="fancybox-media" href="{{ page.youtube}}"> 
 										<span class="vdo-icon"><img src="{{site.baseurl}}/images/yt-btn.png" alt="" /></span> 							
-										{% endif %}</a>
+										</a> 
+									{% endif %}
 										<img src="{{site.baseurl}}/images/{{ page.img }}" alt="" />
 									
 								<h2>Posted on {{ post.date | date_to_string }} {% if post.author %}by {{ post.author}}{% endif %}</h2>
