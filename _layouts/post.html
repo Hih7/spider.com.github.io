@@ -76,6 +76,21 @@ layout: default
 						<div class="search-box">
 							<input type="text" class="search-field" placeholder="Search" />
 							<input value="" type="submit" class="search-icon"/>
+								
+							
+							[
+								    {
+									"title": "{{ post.title }}",
+									"content": "{{ post.content | markdownify | strip_html }}",
+									"link": "{{ site.url }}{{ post.url }}",
+									"date": "{{ post.date }}",
+									"excerpt": "{{ post.snippet }}"
+								    }
+								    ...
+								]
+							
+							
+							
 						</div>
 						
 						<div class="post-cat">
