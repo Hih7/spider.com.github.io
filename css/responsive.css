@@ -2805,6 +2805,13 @@ header {
 .media-para input{
     width:100%;
     }
+.media-para input[type="submit"] {
+   padding: 8px 0;
+   font-size: 15px;
+}
+.navbar-collapse {
+   height: auto;
+}
 }
 
 @media (max-width: 420px) {
