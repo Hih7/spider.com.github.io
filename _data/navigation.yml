@@ -1,22 +1,24 @@
 - title: Home
-  url: /home.html
+  url: /home
 - title: Product
-  url: /product.html
+  url: /product
   sublinks:
     - title: Victim
-      url: /victim.html
+      url: /victim
     - title: Emergency
-      url: /emergency.html
+      url: /emergency
     - title: Responder
-      url: /responder.html   
+      url: /responder
 - title: Resource
-  url: /resource.html
+  url: /resource
   sublinks:
     - title: Blog
-      url: /blog.html
+      url: /blog
     - title: Emergency
-      url: /emergency.html
+      url: /emergency
     - title: Responder
-      url: /responder.html    
+      url: /responder  
 - title: About
-  url: /about.html
+  url: /about
+- title: Contact
+  url: /contact
