@@ -12,13 +12,13 @@
 					<a href="{{site.baseurl}}/" class="logo wow zoomIn"><img src="{{site.baseurl}}/images/logo.png" alt=""/></a>					
 					
 						<div class="navigation">
-							<nav>
+<nav>
   {% for item in site.navigation %}
       {% assign class = nil %}
       {% if page.url contains item.url %}
           {% assign class = 'active' %}
       {% endif %}
-      <a href="{{site.baseurl}}" class="{{ class }}">
+      <a href="{{ item.url }}" class="{{ class }}">
           {{ item.title }}
       </a>
   {% endfor %}
