@@ -53,3 +53,10 @@ markdown: kramdown
 
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+navigation:
+  - title: blog
+    url: /blog/
+  - title: about
+    url: /about/
+  - title: projects
+    url: /projects/
