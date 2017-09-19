@@ -24,11 +24,11 @@
 
 								<div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
 									<ul class="nav navbar-nav">
-										<li  {% if active[1] == 'home' %}class='active'{% endif %}>
+										<li  {% if active[1] == 'index' %}class='active'{% endif %}>
 											<a href="{{site.baseurl}}/">Home</a>
 										</li>
-										<li class="dropdown">
-											<a href="{{site.baseurl}}/product" class="dropdown-toggle"{% if active[1] == 'product' %}class='active'{% endif %}>Product <b class="caret"></b></a>
+										<li class="dropdown" {% if active[1] == 'product' %}class='active'{% endif %}>
+											<a href="{{site.baseurl}}/product" class="dropdown-toggle">Product <b class="caret"></b></a>
 											<ul class="dropdown-menu">
 												<li {% if active[1] == 'victim' %}class='active'{% endif %}>
 													<a href="{{site.baseurl}}/victim"> Victim Notifications</a><li>
