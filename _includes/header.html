@@ -21,46 +21,20 @@
 									<span class="icon-bar"></span>
 								</button>
 <div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
-    <!-- Belongs at: /_includes/navigation.html -->
-
-<!-- This finds the current page so it can be highlighted. -->
-
-{% for entry in site.data.navigation %}
-{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
-    {% if fullurl == page.url %}
-        {% assign current_page = fullurl %}
-        {% break %}
-    {% elsif page.url contains fullurl %}
-        {% assign current_page = fullurl %}
-    {% endif %}
-{% endfor %}
-
-<!-- Then we build the nav bar. -->
-    <ul class="nav navbar-nav">
-    {% for entry in site.data.navigation %}
-        {% if entry.url == current_page %}
-            {% assign current = ' class="current"' %}
-        {% else %}
-            <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
-            {% assign current = null %}
-        {% endif %}
-        {% assign sublinks = entry.sublinks %}
-        {% if sublinks %}
-        <li{{ current }}>
-            <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-            <ul>
-                {% for sublink in sublinks %}
-                <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </li>
-        {% else %}
-        <li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
-        {% endif %}
-    {% endfor %}
-    </ul>
+ <div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class=" icon-chevron-down"></span> </a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="{% active_page index%}"><a href="index.html">Home</a></li>
+          <li class="{% active_page about%}"><a href="about.html">About us</a></li>
+          <li class="{% active_page contact%}"><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 	</div>
-</nav>
 							
 							<a href="{{site.baseurl}}/contact" class="ban-btn">Request a demo</a>
 						</div>
