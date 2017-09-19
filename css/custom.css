@@ -2711,3 +2711,7 @@ span.hs-form-required {
     margin: 25px 0px 0px;
     width: 150px;
 }
+.top-nav ul li a:focus, .top-nav ul li a.active {
+    color: #fff;
+    font-weight: 700;
+}
