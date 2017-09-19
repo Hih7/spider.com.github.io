@@ -1,0 +1,22 @@
+- title: Home
+  url: /home.html
+- title: Product
+  url: /product.html
+   sublinks:
+    - title: Victim
+      url: /victim.html
+    - title: Emergency
+      url: /emergency.html
+    - title: Responder
+      url: /responder.html   
+- title: Resource
+  url: /resource.html
+   sublinks:
+    - title: Blog
+      url: /blog.html
+    - title: Emergency
+      url: /emergency.html
+    - title: Responder
+      url: /responder.html    
+- title: About
+  url: /about.html
