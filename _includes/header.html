@@ -65,6 +65,18 @@
 									</ul>
 								</div>
 							</nav><!-- navbar -->
+							<ul class="main-menu">
+  {% for item in site.data.navigation %}
+    <li class="main-menu-item">
+      {% if {{page.active}} == {{item.active}} %}
+        <a class="main-menu-link active" href="{{ item.url }}">{{ item.name }}</a>
+      {% else %}
+        <a class="main-menu-link" href="{{ item.url }}">{{ item.name }}</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+							
 							
 							<a href="{{site.baseurl}}/contact" class="ban-btn">Request a demo</a>
 						</div>
