@@ -12,7 +12,7 @@
 					<a href="{{site.baseurl}}/" class="logo wow zoomIn"><img src="{{site.baseurl}}/images/logo.png" alt=""/></a>					
 					
 						<div class="navigation">
-					<nav class="navbar">
+						<nav class="navbar">
 								<!-- toggle for better mobile display -->
 								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 									<span class="sr-only">Toggle navigation</span>
@@ -20,21 +20,51 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-<div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
- <div class="navbar navbar-inverse">
-  <div class="navbar-inner">
-    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class=" icon-chevron-down"></span> </a>
-      <div class="nav-collapse collapse">
-        <ul class="nav">
-          <li class="{% active_page index%}"><a href="index.html">Home</a></li>
-          <li class="{% active_page about%}"><a href="about.html">About us</a></li>
-          <li class="{% active_page contact%}"><a href="contact.html">Contact us</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-	</div>
+
+								<div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
+									<ul class="nav navbar-nav">
+										<li  class="active">
+											<a href="{{site.baseurl}}/" >Home</a>
+										</li>
+										<li class="dropdown">
+											<a href="{{site.baseurl}}/product" class="dropdown-toggle">Product <b class="caret"></b></a>
+											<ul class="dropdown-menu">
+												<li>
+													<a href="{{site.baseurl}}/victim"> Victim Notifications</a>
+												</li>
+												
+												<li>
+													<a href="{{site.baseurl}}/emergency"> Non-Emergency Requests </a>
+												</li>
+												<li>
+													<a href="{{site.baseurl}}/responder"> CAD Responder </a>
+												</li>
+											</ul>
+										</li>
+										<!-- <li>
+											<a href="{{site.baseurl}}/module">Module</a>
+										</li> -->
+										<li class="dropdown">
+											<a href="{{site.baseurl}}/resource" class="dropdown-toggle">resources <b class="caret"></b></a>
+											<ul class="dropdown-menu">
+												<li>
+													<a href="{{site.baseurl}}/blog"> blog</a>
+												</li>
+												
+												<li>
+													<a href="{{site.baseurl}}/calculator">calculator </a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="{{site.baseurl}}/about">about</a>
+										</li>
+										<!-- <li>
+											<a href="javascript:void(0);">Contact</a>
+										</li> -->
+									</ul>
+								</div>
+							</nav><!-- navbar -->
 							
 							<a href="{{site.baseurl}}/contact" class="ban-btn">Request a demo</a>
 						</div>
