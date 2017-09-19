@@ -24,8 +24,27 @@
  							<div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 							    <li><a href='{{site.baseurl}}/' {% if current[1] == 'home' %}class='current'{% endif %}>Home</a></li>
-							    <li><a href='/blog' {% if current[1] == 'blog' %}class='current'{% endif %}>blog</a></li>
-							    <li><a href='/product' {% if current[1] == 'product' %}class='current'{% endif %}>product</a></li>
+							    <li><a href='{{site.baseurl}}/blog' {% if current[1] == 'blog' %}class='current'{% endif %}>blog</a></li>
+							    <li><a href='{{site.baseurl}}/product' {% if current[1] == 'product' %}class='current'{% endif %}>product</a></li>
+								
+							<li class="dropdown">
+										 <a href='{{site.baseurl}}/product' {% if current[1] == 'product' %}class='current'{% endif %}>product<b class="caret"></b></a>
+
+											<ul class="dropdown-menu">
+												<li>
+													<a href="{{site.baseurl}}/victim"{% if current[1] == 'victim' %}class='current'{% endif %}> Victim Notifications</a>
+												</li>
+												
+												<li>
+													<a href="{{site.baseurl}}/emergency"{% if current[1] == 'emergency' %}class='current'{% endif %}> Non-Emergency Requests </a>
+												</li>
+												<li>
+													<a href="{{site.baseurl}}/responder"{% if current[1] == 'responder' %}class='current'{% endif %}> CAD Responder </a>
+												</li>
+											</ul>
+										</li>
+								
+								
 							  </ul>
 							</nav>
 							</div>
