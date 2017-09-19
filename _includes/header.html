@@ -21,37 +21,45 @@
 									<span class="icon-bar"></span>
 								</button>
 <div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
+    <!-- Belongs at: /_includes/navigation.html -->
+
+<!-- This finds the current page so it can be highlighted. -->
+
+{% for entry in site.data.navigation %}
+{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
+    {% if fullurl == page.url %}
+        {% assign current_page = fullurl %}
+        {% break %}
+    {% elsif page.url contains fullurl %}
+        {% assign current_page = fullurl %}
+    {% endif %}
+{% endfor %}
+
+<!-- Then we build the nav bar. -->
     <ul class="nav navbar-nav">
-	    
-        {% assign links = site.data.navigation %}
-        {% for link in links %}
-            {% assign class = nil %}
-            {% if page.url contains link.url %}
-                {% assign class = 'active' %}
-            {% endif %}
-            {% if link.sublinks %}
-                <li class="dropdown {{ class }}">
-                    <a href="{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        {% for sublink in link.sublinks %}
-                            {% if sublink.title == 'separator' %}
-                                <li role="separator" class="divider"></li>
-                            {% else %}
-                                <li>
-                                    <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                                </li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                </li>
-            {% else %}
-                <li class="{{ class }}">
-                    <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-                </li>
-            {% endif %}
-        {% endfor %}
+    {% for entry in site.data.navigation %}
+        {% if entry.url == current_page %}
+            {% assign current = ' class="current"' %}
+        {% else %}
+            <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
+            {% assign current = null %}
+        {% endif %}
+        {% assign sublinks = entry.sublinks %}
+        {% if sublinks %}
+        <li{{ current }}>
+            <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+            <ul>
+                {% for sublink in sublinks %}
+                <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% else %}
+        <li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
+        {% endif %}
+    {% endfor %}
     </ul>
-</div>
+	</div>
 </nav>
 							
 							<a href="{{site.baseurl}}/contact" class="ban-btn">Request a demo</a>
