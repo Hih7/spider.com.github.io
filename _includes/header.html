@@ -13,13 +13,22 @@
 						<div class="navigation">
 						{% assign current = page.url | downcase | split: '/' %}
 
-<nav>
-  <ul>
-    <li><a href='{{site.baseurl}}/' {% if current[1] == 'home' %}class='current'{% endif %}>Home</a></li>
-    <li><a href='/blog' {% if current[1] == 'blog' %}class='current'{% endif %}>blog</a></li>
-    <li><a href='/product' {% if current[1] == 'product' %}class='current'{% endif %}>product</a></li>
-  </ul>
-</nav>
+<nav class="navbar">
+	<!-- toggle for better mobile display -->
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+ 							<div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+							    <li><a href='{{site.baseurl}}/' {% if current[1] == 'home' %}class='current'{% endif %}>Home</a></li>
+							    <li><a href='/blog' {% if current[1] == 'blog' %}class='current'{% endif %}>blog</a></li>
+							    <li><a href='/product' {% if current[1] == 'product' %}class='current'{% endif %}>product</a></li>
+							  </ul>
+							</nav>
+							</div>
 							
 							<a href="{{site.baseurl}}/contact" class="ban-btn">Request a demo</a>
 						</div>
