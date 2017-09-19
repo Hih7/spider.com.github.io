@@ -28,7 +28,7 @@
 											<a href="{{site.baseurl}}/">Home</a>
 										</li>
 										<li class="dropdown">
-											<a href="{{site.baseurl}}/product" class="dropdown-toggle" {% if active[1] == 'product' %}class='active'{% endif %} >Product <b class="caret"></b></a>
+											<a {% if active[1] == 'product' %}class='active'{% endif %} href="{{site.baseurl}}/product" class="dropdown-toggle"  >Product <b class="caret"></b></a>
 											<ul class="dropdown-menu">
 												<li {% if active[1] == 'victim' %}class='active'{% endif %}>
 													<a href="{{site.baseurl}}/victim"> Victim Notifications</a><li>
