@@ -2,7 +2,7 @@
   url: /home.html
 - title: Product
   url: /product.html
-   sublinks:
+  sublinks:
     - title: Victim
       url: /victim.html
     - title: Emergency
@@ -11,7 +11,7 @@
       url: /responder.html   
 - title: Resource
   url: /resource.html
-   sublinks:
+  sublinks:
     - title: Blog
       url: /blog.html
     - title: Emergency
