@@ -12,59 +12,46 @@
 					<a href="{{site.baseurl}}/" class="logo wow zoomIn"><img src="{{site.baseurl}}/images/logo.png" alt=""/></a>					
 					
 						<div class="navigation">
-						<nav class="navbar">
-								<!-- toggle for better mobile display -->
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
+						<!-- Belongs at: /_includes/navigation.html -->
 
-								<div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav">
-										<li  class="active">
-											<a href="{{site.baseurl}}/" >Home</a>
-										</li>
-										<li class="dropdown">
-											<a href="{{site.baseurl}}/product" class="dropdown-toggle">Product <b class="caret"></b></a>
-											<ul class="dropdown-menu">
-												<li>
-													<a href="{{site.baseurl}}/victim"> Victim Notifications</a>
-												</li>
-												
-												<li>
-													<a href="{{site.baseurl}}/emergency"> Non-Emergency Requests </a>
-												</li>
-												<li>
-													<a href="{{site.baseurl}}/responder"> CAD Responder </a>
-												</li>
-											</ul>
-										</li>
-										<!-- <li>
-											<a href="{{site.baseurl}}/module">Module</a>
-										</li> -->
-										<li class="dropdown">
-											<a href="{{site.baseurl}}/resource" class="dropdown-toggle">resources <b class="caret"></b></a>
-											<ul class="dropdown-menu">
-												<li>
-													<a href="{{site.baseurl}}/blog"> blog</a>
-												</li>
-												
-												<li>
-													<a href="{{site.baseurl}}/calculator">calculator </a>
-												</li>
-											</ul>
-										</li>
-										<li>
-											<a href="{{site.baseurl}}/about">about</a>
-										</li>
-										<!-- <li>
-											<a href="javascript:void(0);">Contact</a>
-										</li> -->
-									</ul>
-								</div>
-							</nav><!-- navbar -->	
+<!-- This finds the current page so it can be highlighted. -->
+
+{% for entry in site.data.navigation %}
+{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
+    {% if fullurl == page.url %}
+        {% assign current_page = fullurl %}
+        {% break %}
+    {% elsif page.url contains fullurl %}
+        {% assign current_page = fullurl %}
+    {% endif %}
+{% endfor %}
+
+<!-- Then we build the nav bar. -->
+<nav>
+    <ul>
+    {% for entry in site.data.navigation %}
+        {% if entry.url == current_page %}
+            {% assign current = ' class="current"' %}
+        {% else %}
+            <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
+            {% assign current = null %}
+        {% endif %}
+        {% assign sublinks = entry.sublinks %}
+        {% if sublinks %}
+        <li{{ current }}>
+            <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+            <ul>
+                {% for sublink in sublinks %}
+                <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% else %}
+        <li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</nav>
 							<a href="{{site.baseurl}}/contact" class="ban-btn">Request a demo</a>
 						</div>
 				</div><!-- container -->
