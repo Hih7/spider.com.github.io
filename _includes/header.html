@@ -9,27 +9,26 @@
 		<header class="main_header">
 				<div class="container">
 					
-					<a href="{{site.baseurl}}/" class="logo wow zoomIn"><img src="{{site.baseurl}}/images/logo.png" alt=""/></a>							
+					<a href="{{site.baseurl}}/" class="logo wow zoomIn"><img src="{{site.baseurl}}/images/logo.png" alt=""/></a>					
+					
 						<div class="navigation">
+						<nav class="navbar">
 						{% assign current = page.url | downcase | split: '/' %}
-
-<nav class="navbar">
-	<!-- toggle for better mobile display -->
+								<!-- toggle for better mobile display -->
 								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 									<span class="sr-only">Toggle navigation</span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
- 							<div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-							    <li><a href='{{site.baseurl}}/' {% if current[1] == 'home' %}class='current'{% endif %}>Home</a></li>
-							    <li><a href='{{site.baseurl}}/blog' {% if current[1] == 'blog' %}class='current'{% endif %}>blog</a></li>
-							    <li><a href='{{site.baseurl}}/product' {% if current[1] == 'product' %}class='current'{% endif %}>product</a></li>
-								
-							<li class="dropdown">
-										 <a href='{{site.baseurl}}/product' {% if current[1] == 'product' %}class='current'{% endif %}>product<b class="caret"></b></a>
 
+								<div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
+									<ul class="nav navbar-nav">
+										<li  class="active">
+											<a href="{{site.baseurl}}/" {% if current[1] == 'home' %}class='current'{% endif %}>Home</a>
+										</li>
+										<li class="dropdown">
+											<a href="{{site.baseurl}}/product" class="dropdown-toggle"{% if current[1] == 'product' %}class='current'{% endif %}>Product <b class="caret"></b></a>
 											<ul class="dropdown-menu">
 												<li>
 													<a href="{{site.baseurl}}/victim"{% if current[1] == 'victim' %}class='current'{% endif %}> Victim Notifications</a>
@@ -43,11 +42,30 @@
 												</li>
 											</ul>
 										</li>
-								
-								
-							  </ul>
-							</nav>
-							</div>
+										<!-- <li>
+											<a href="{{site.baseurl}}/module"{% if current[1] == 'about' %}class='current'{% endif %}>Module</a>
+										</li> -->
+										<li class="dropdown">
+											<a href="{{site.baseurl}}/resource" class="dropdown-toggle"{% if current[1] == 'resources' %}class='current'{% endif %}>resources <b class="caret"></b></a>
+											<ul class="dropdown-menu">
+												<li>
+													<a href="{{site.baseurl}}/blog"{% if current[1] == 'blog' %}class='current'{% endif %}> blog</a>
+												</li>
+												
+												<li>
+													<a href="{{site.baseurl}}/calculator"{% if current[1] == 'calculator' %}class='current'{% endif %}>calculator </a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="{{site.baseurl}}/about"{% if current[1] == 'about' %}class='current'{% endif %}>about</a>
+										</li>
+										<!-- <li>
+											<a href="javascript:void(0);"{% if current[1] == 'about' %}class='current'{% endif %}>Contact</a>
+										</li> -->
+									</ul>
+								</div>
+							</nav><!-- navbar -->
 							
 							<a href="{{site.baseurl}}/contact" class="ban-btn">Request a demo</a>
 						</div>
