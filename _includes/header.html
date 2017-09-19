@@ -9,62 +9,17 @@
 		<header class="main_header">
 				<div class="container">
 					
-					<a href="{{site.baseurl}}/" class="logo wow zoomIn"><img src="{{site.baseurl}}/images/logo.png" alt=""/></a>					
-					
+					<a href="{{site.baseurl}}/" class="logo wow zoomIn"><img src="{{site.baseurl}}/images/logo.png" alt=""/></a>							
 						<div class="navigation">
 						{% assign current = page.url | downcase | split: '/' %}
-						<nav class="navbar">
-								<!-- toggle for better mobile display -->
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
 
-								<div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav">
-										<li><a href='{{site.baseurl}}/' {% if current[1] == 'about' %}class='current'{% endif %}>Home</a></li>
-										<li class="dropdown">
-											<a href='{{site.baseurl}}/product' {% if current[1] == 'about' %}class='current'{% endif %}>Product<b class="caret"></b>
-											</a>
-											<ul class="dropdown-menu">
-												<li>
-													<a href="{{site.baseurl}}/victim"> Victim Notifications</a>
-												</li>
-												
-												<li>
-													<a href="{{site.baseurl}}/emergency"> Non-Emergency Requests </a>
-												</li>
-												<li>
-													<a href="{{site.baseurl}}/responder"> CAD Responder </a>
-												</li>
-											</ul>
-										</li>
-										<!-- <li>
-											<a href="{{site.baseurl}}/module">Module</a>
-										</li> -->
-										<li class="dropdown">
-											<a href="{{site.baseurl}}/resource" class="dropdown-toggle">resources <b class="caret"></b></a>
-											<ul class="dropdown-menu">
-												<li>
-													<a href="{{site.baseurl}}/blog"> blog</a>
-												</li>
-												
-												<li>
-													<a href="{{site.baseurl}}/calculator">calculator </a>
-												</li>
-											</ul>
-										</li>
-										<li>
-											<a href="{{site.baseurl}}/about">about</a>
-										</li>
-										<!-- <li>
-											<a href="javascript:void(0);">Contact</a>
-										</li> -->
-									</ul>
-								</div>
-							</nav><!-- navbar -->
+<nav>
+  <ul>
+    <li><a href='/about' {% if current[1] == 'about' %}class='current'{% endif %}>about</a></li>
+    <li><a href='/blog' {% if current[1] == 'blog' %}class='current'{% endif %}>blog</a></li>
+    <li><a href='/contact' {% if current[1] == 'contact' %}class='current'{% endif %}>contact</a></li>
+  </ul>
+</nav>
 							
 							<a href="{{site.baseurl}}/contact" class="ban-btn">Request a demo</a>
 						</div>
